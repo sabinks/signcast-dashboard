@@ -23,8 +23,6 @@ const EditScreen = () => {
             edit = value == "false" ? false : true
         }
     }
-    console.log(edit);
-
     const [canvas, setCanvas] = useState<Canvas | null>(null);
     const [formData, setFormData] = useState<screenProps>({
         screenId: '',
