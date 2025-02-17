@@ -9,6 +9,7 @@ const Loading = lazy(() => import('./components/loading.tsx'))
 const NotFound = lazy(() => import('./components/notFound.tsx'))
 const MainScreen = lazy(() => import('./components/mainScreen.tsx'))
 const Devices = lazy(() => import('./components/devices.tsx'))
+
 function App() {
     return (
         <div className='h-screen'>
