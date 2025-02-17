@@ -23,9 +23,10 @@ function classNames(...classes: string[]) {
 const SOCKET_URL = import.meta.env.VITE_SOCKET_URL
 
 export const socket = io(SOCKET_URL);
+
 export function Layout() {
     const location = useLocation();
-    const { devices, setScreens, setDevices } = useAppContext()
+    const { setScreens, setDevices } = useAppContext()
 
     useEffect(() => {
         socket.on("list-screens", (screens) => {
@@ -39,7 +40,6 @@ export function Layout() {
             socket.off("list-devices");
         };
     }, [])
-    console.log(devices);
 
     useEffect(() => {
         socket.emit("get-all-screens", () => {

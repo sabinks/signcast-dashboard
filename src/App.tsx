@@ -17,8 +17,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route index path="screens" element={<MainScreen />} />
-                        <Route index path="screens/new" element={<AddScreen />} />
-                        <Route index path="screens/edit" element={<EditScreen />} />
+                        <Route path="screens/new" element={<AddScreen />} />
+                        <Route path="screens/edit" element={<EditScreen />} />
                         <Route path="devices" element={<Devices />} />
                         <Route path="*" element={<NotFound />} />
                     </Route>
