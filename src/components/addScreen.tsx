@@ -36,7 +36,7 @@ const AddScreen = () => {
     }, []);
     useEffect(() => {
         const handleKeyDown = (event: KeyboardEvent) => {
-            if (event.key === "Delete" || event.key === "Backspace") {
+            if (event.key === "Delete") {
                 if (canvas) {
                     const activeObject = canvas.getActiveObject();
                     if (activeObject) {
